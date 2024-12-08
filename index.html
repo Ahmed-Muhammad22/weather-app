@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- ========== Start google fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ========== End google fonts ========== -->
+    
+    <!-- ========== Start fontAwesome library ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    
+    <!-- ========== End fontAwesome library ========== -->
+    
+    <!-- ========== Start bootstrap css ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ========== End bootstrap css ========== -->
+    
+    <!-- ========== Start style css ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ========== End style css ========== -->
+</head>
+<body>
+<nav class="navbar navbar-expand-lg my-nav">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo@2x.png" alt="logo image" width="64" height="38"/>
+            <h1>Weather</h1>
+            <small>tagline goes here</small>
+        </a>
+        <button class="navbar-toggler icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <i class="fa-solid fa-bars text-white"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+</nav>
+
+
+<section>
+    <div class="container">
+        <div class="location">
+            <input id="searchInput" type="text" placeholder="Find your location..." />
+            <button id="searchBtn"><span>find</span></button>
+        </div>
+        <div class="row g-3 my-3" id="rowData">
+        </div>
+    </div>
+        
+       
+</section>
+
+
+
+<footer>
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-8">
+            <div class="subscription">
+                <input id="subscribeInput" type="text" placeholder="Enter your email to subscribe..." />
+                <button id="subscribeBtn"><span>subscribe</span></button>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="icons  ms-3">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+       </div>
+    <p class="copy-right">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+</footer>
+    
+    
+    <!-- ========== Start bootstrap js ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========== End bootstrap js ========== -->
+    
+    <!-- ========== Start main js ========== -->
+    <script src="./js/script.js"></script>
+    <!-- ========== End main js ========== -->
+</body>
+</html>
